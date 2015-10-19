@@ -1,6 +1,6 @@
 {
   "name": "mako-stat",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A mako plugin that adds a preread hook for stat-ing a file",
   "devDependencies": {
     "@dominicbarnes/eslint-config": "*",

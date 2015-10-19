@@ -3,6 +3,9 @@
 > A mako plugin that stats the specified extensions during preread, making it useful in ensuring that files exist on disk.
 > Generally, this will be consumed by other plugins rather than used directly.
 
+[![npm version](https://img.shields.io/npm/v/mako-stat.svg)](https://www.npmjs.com/package/mako-stat)
+[![build status](https://img.shields.io/travis/makojs/stat.svg)](https://travis-ci.org/makojs/stat)
+
 ## Usage
 
 ```js

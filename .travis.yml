@@ -6,3 +6,11 @@ install: npm update
 cache:
   directories:
   - node_modules
+deploy:
+  provider: npm
+  email: dominic@dbarnes.info
+  api_key:
+    secure: YmY89q+ZX9DqCgKhR6fqGus1PkdfJzdN66qMKhKUOv+NZX37rYc18VFQFMDz8p9orYgp3yfI3V8rWbG4f7EEqf7o+bNI9FJqx2vukXTRU5fQqDYLHPeoDYPPyEW4BQyh4K0i/D6USdgG8N32hAAYH0tCGpDR+9GB/Yl9uZVIFrRr2oAhSA/XIAjLDC//zmKL+G7C4g/G2ljhcHFEdxj8WoZKvWYqZEdWtT+/YTBdAwMJs5ZVNTSoRg6rD4LWGfej5YagGnbjnEl0na66UewkGgVFxPINkCBa+RmmP8v7AruTXOa7ksobIHW996nt28ED8cXuSfV4c0I6riRTt2B3dAVyOkBvH6BYS6kVNUmpZ9Fd2VG3HS7xYzaMEBNZrPEU+SOPSenBkdc98RnC/JqsW8LvrSOOKZd3wXly3NOEVgD8WhEuVp9k7QKg5KVPHjOUweee/y6qP+2nm35kFszcMp3KdafGZfwD79wT23wak0kUDPMOfFQ5KvO3xZJgBt9YySUA1/7Ls7uzWJLn3f5lKZOClTn5GoNEoCsThamygmV+P7VH5E8kwhsUzuggWu59EbjweuuIgIIbfSNaqB6Ww3PVSJeYj5/qcQyH3TmEZkeNrsGLsDxKIcoPRGBIGjrtRBpAwPtqcj38IDy0R65qmIzG5CCiinToJjIq/MqQ1D4=
+  on:
+    tags: true
+    repo: makojs/stat

@@ -15,5 +15,8 @@
   },
   "scripts": {
     "test": "mocha"
+  },
+  "dependencies": {
+    "debug": "^2.2.0"
   }
 }

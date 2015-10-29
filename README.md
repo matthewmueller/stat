@@ -4,6 +4,8 @@
 > Generally, this will be consumed by other plugins rather than used directly.
 
 [![npm version](https://img.shields.io/npm/v/mako-stat.svg)](https://www.npmjs.com/package/mako-stat)
+[![npm dependencies](https://img.shields.io/david/makojs/stat.svg)](https://david-dm.org/makojs/stat)
+[![npm dev dependencies](https://img.shields.io/david/dev/makojs/stat.svg)](https://david-dm.org/makojs/stat#info=devDependencies)
 [![build status](https://img.shields.io/travis/makojs/stat.svg)](https://travis-ci.org/makojs/stat)
 
 ## Usage

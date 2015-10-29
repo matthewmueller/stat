@@ -2,6 +2,10 @@
   "name": "mako-stat",
   "version": "0.1.0",
   "description": "A mako plugin that adds a preread hook for stat-ing a file",
+  "repository": "makojs/stat",
+  "dependencies": {
+    "debug": "^2.2.0"
+  },
   "devDependencies": {
     "@dominicbarnes/eslint-config": "*",
     "@dominicbarnes/eslint-config-node": "*",
@@ -15,9 +19,8 @@
     "touch": "^1.0.0"
   },
   "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
     "test": "mocha"
-  },
-  "dependencies": {
-    "debug": "^2.2.0"
   }
 }

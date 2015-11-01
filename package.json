@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "description": "A mako plugin that adds a preread hook for stat-ing a file",
   "repository": "makojs/stat",
+  "license": "MIT",
   "dependencies": {
     "debug": "^2.2.0"
+  },
+  "peerDependencies": {
+    "mako": "^0.2.0"
   },
   "devDependencies": {
     "@dominicbarnes/eslint-config": "*",

@@ -1,6 +1,6 @@
 {
   "name": "mako-stat",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A mako plugin that adds a preread hook for stat-ing a file",
   "repository": "makojs/stat",
   "license": "MIT",

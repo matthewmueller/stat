@@ -1,4 +1,9 @@
 
+0.1.2 / 2015-11-01
+==================
+
+  * tagging another release because of seemingly corrupt 0.1.1
+
 0.1.1 / 2015-11-01
 ==================
 

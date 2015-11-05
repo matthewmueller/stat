@@ -5,9 +5,7 @@
   "keywords": [
     "mako",
     "plugin",
-    "analyze",
-    "preread",
-    "stat"
+    "analyze"
   ],
   "repository": "makojs/stat",
   "license": "MIT",

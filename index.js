@@ -18,7 +18,7 @@ module.exports = function (extensions) {
         } else {
           debug('stat for %s', file.path, stat);
           file.stat = stat;
-          file.analyzed = !modified(previous, stat);
+          if (modified(previous, stat)) file.dirty();
           done();
         }
       });

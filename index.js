@@ -3,22 +3,29 @@
 
 let debug = require('debug')('mako-stat');
 let fs = require('fs');
+let path = require('path');
+
+const pwd = process.cwd();
+const relative = abs => path.relative(pwd, abs);
+
 
 module.exports = function (extensions) {
   debug('initialize %j', extensions);
 
   return function (mako) {
     mako.preread(extensions, function stat(file, tree, mako, done) {
-      debug('checking stat for %s', file.path);
+      debug('checking %s', relative(file.path));
       let previous = file.stat;
       fs.stat(file.path, function (err, stat) {
         if (err) {
           debug(err.message);
           done(err);
         } else {
-          debug('stat for %s', file.path, stat);
           file.stat = stat;
-          if (modified(previous, stat)) file.dirty();
+          if (modified(previous, stat)) {
+            debug('dirty %s', relative(file.path));
+            file.dirty();
+          }
           done();
         }
       });
